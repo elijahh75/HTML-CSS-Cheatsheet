@@ -1,0 +1,41 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(199, 197, 197);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color:darkgreen;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    width: 650px;
+    margin: 0 auto;
+}
+
+table {
+    border: 3px solid darkolivegreen;
+    width: 650px;
+    margin: 0 auto;
+}
+
+thead {
+    background-color: lightgreen;
+}
+
+th {
+    background-color: lightgreen;
+}
+
+td {
+    border-top: 1px solid darkolivegreen;
+    border-right: 1px solid darkolivegreen;
+    border-bottom: 1px solid darkolivegreen;
+}
+
+.code {
+    font-family: monospace;
+    background-color: beige;
+}
