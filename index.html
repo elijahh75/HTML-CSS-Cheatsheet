@@ -3,49 +3,574 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
     <title>Elijah's HTML/CSS Cheatsheet</title>
 </head>
 <body>
-    <h1>Elijah's HTML/CSS Cheatsheet</h1>
-    <h2>Table Tags</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Tag</th>
+    <h1>HTML/CSS Cheatsheet</h1>
+
+    <h2><strong>HTML</strong></h2>
+    
+    <div class="htmltags">
+        <h3>HTML Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">&lt;em&gt;</span>
+                    </td>
+                    <td>Emphasis</td>
+                    <td>Emphasizes text in browser, usually <em>italicized</em> by default.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;strong&gt;</span>
+                    </td>
+                    <td>Strong</td>
+                    <td>Browsers render this tag as <strong>bold</strong>.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;div&gt;</span>
+                    </td>
+                    <td>Div</td>
+                    <td>A container that divides into sections.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;br&gt;</span>
+                    </td>
+                    <td>Line Break</td>
+                    <td>Creates a break in text (addresses, poems), does not need a closing tag.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;img&gt;</span>
+                    </td>
+                    <td>Image</td>
+                    <td>The src contains the URL for the image, does not have a closing tag.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;span&gt;</span>
+                    </td>
+                    <td>Span</td>
+                    <td>An inline container for text, used for styling purposes.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="htmltable">
+        <h3>Table Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">&lt;table&gt;</span>
+                    </td>
+                    <td>Table</td>
+                    <td>The wrapper element for all HTML tables.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;thead&gt;</span>
+                    </td>
+                    <td>Table Head</td>
+                    <td>The set of rows defining the column headers in a table.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;th&gt;</span>
+                    </td>
+                    <td>Table Head Data</td>
+                    <td>Table data container for the header.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;tbody&gt;</span>
+                    </td>
+                    <td>Table Body</td>
+                    <td>The set of rows containing actual tabel data.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;tr&gt;</span>
+                    </td>
+                    <td>Table Row</td>
+                    <td>The table row container.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;td&gt;</span>
+                    </td>
+                    <td>Table Data</td>
+                    <td>The table data container.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;tfoot&gt;</span>
+                    </td>
+                    <td>Table Footer</td>
+                    <td>The set of rows defining the footer in a table.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="htmlatttable">
+        <h3>Table Attributes</h3>
+        <table>
+            <thead>
+                <th>Attribute</th>
                 <th>Name</th>
                 <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <span class="code">&lt;table&gt;</span>
-                </td>
-                <td>Table</td>
-                <td>The wrapper element for all HTML tables.</td>
-            </tr>
-            <tr>
-                <td>
-                    <span class="code">&lt;thead&gt;</span>
-                </td>
-                <td>Table Head</td>
-                <td>The set of rows defining the column headers in a table.</td>
-            </tr>
-            <tr>
-                <td>
-                    <span class="code">&lt;tbody&gt;</span>
-                </td>
-                <td>Table Body</td>
-                <td>The set of rows containing actual tabel data.</td>
-            </tr>
-            <tr>
-                <td>
-                    <span class="code">&lt;tr&gt;</span>
-                </td>
-                <td>Table Row</td>
-                <td>The table row container.</td>
-            </tr>
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">colspan</span>
+                    </td>
+                    <td>Column Span</td>
+                    <td>Defines how many columns a td element should span.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">rowspan</span>
+                    </td>
+                    <td>Row Span</td>
+                    <td>Defines how many rows a td element should span.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="semhtml">
+        <h3>Semantic HTML</h3>
+        <p>Semantic HTML uses elements to describe what an element does or where it's placed. Some examples are: <span class="code">&lt;header&gt;</span>, <span class="code">&lt;nav&gt;</span>, <span class="code">&lt;main&gt;</span>, and <span class="code">&lt;footer&gt;</span></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">&lt;video&gt;</span>
+                    </td>
+                    <td>Adds video to a site, req. a closing tag.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;audio&gt;</span>
+                    </td>
+                    <td>Adds audio to a site, req. a closing tag.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;embed&gt;</span>
+                    </td>
+                    <td>Can be used to add any type of media, is a self closing tag.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;figure&gt;</span>
+                    </td>
+                    <td>Used to encapsulate media like images, diagrams, etc.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;figcaption&gt;</span>
+                    </td>
+                    <td>Used to describe media in the <span class="code">&lt;figure&gt;</span>, used within the <span class="code">&lt;figure&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;section&gt;</span>
+                    </td>
+                    <td>Defines elements in a doc. like chapters, or headings with the same theme.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;article&gt;</span>
+                    </td>
+                    <td>Used to hold content that makes sense on its own (articles, blogs, comments), can be used in/out of <span class="code">&lt;section&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;aside&gt;</span>
+                    </td>
+                    <td>Used to mark additional info that can enhance another element, but is not req. to understand it (sidebar, ads).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="htmlforms">
+        <h3>HTML Forms</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">&lt;textarea&gt;</span>
+                    </td>
+                    <td>Textarea</td>
+                    <td>Used to create a text-box for multi-line inputs (comment sections). It supports the <span class="code">rows</span> and <span class="code">cols</span> attributes that determine height/width, this can be adjusted in browser by user, but initial size is set by <span class="code">rows</span> and <span class="code">cols</span>.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;datalist&gt;</span>
+                    </td>
+                    <td>Datalist</td>
+                    <td>A basic search/autofill function by pairing a <span class="code">&lt;input&gt;</span> and <span class="code">&lt;datalist&gt;</span>, to pair them the <span class="code">&lt;input&gt;</span>'s <span class="code">list</span> must match the <span class="code">id</span> of the <span class="code">&lt;datatlist&gt;</span>. The <span class="code">datalist</span> element stores a list of <span class="code">&lt;option&gt;</span>s. The list is shown as a dropdown.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;select&gt;</span>
+                    </td>
+                    <td>Select</td>
+                    <td>Used to create a dropdown list, the choices for the dropdown is created by the <span class="code">&lt;option&gt;</span> elements. There can only be one <span class="code">&lt;option&gt;</span> selected at a time.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;form&gt;</span>
+                    </td>
+                    <td>Form</td>
+                    <td>Used to collect and send info to an external source, using the <span class="code">action</span> attribute of the form (in the form of a URL, which also req. a <span class="code">method</span> assigned a HTTP verb), and using the various <span class="code">input</span> elements. Req. closing tag.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;input&gt;</span>
+                    </td>
+                    <td>Input</td>
+                    <td>Used to render a variety of input fields, including text fields, checkboxes, buttons, etc. inside the <span class="code">&lt;form&gt;</span> element. The <span class="code">&lt;input&gt;</span> element has a <span class="code">type</span> that determines how it gets rendered. Self-closing tag.</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Input attributes</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="code">name</span>
+                    </td>
+                    <td>In order for a form to send data, it needs to be put in key-value pairs. This is done by setting the <span class="code">name</span> attribute of the <span class="code">input</span> element. The <span class="code">name</span> will become the key and the user input will become the value assocsiated to it.(example: <span class="code">name="username"</span>) Must have an ID for form submission as well (<span class="code">id="username"</span>)</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="code">type="text"</span>
+                    </td>
+                    <td>Creates a single row input field where users can type in. The value of the <span class="code">name</span> and <span class="code">value</span> attribute are sent as key-value pair when submitted.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="code">type="number"</span>
+                    </td>
+                    <td>Allows users to <strong>only</strong> enter numbers and special characters.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="code">type="password"</span>
+                    </td>
+                    <td>Creates a row for users to be able to input sensitve info in a censored format. The key-value pair is submitted with the actual value, not the censored value.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="code">type="submit"</span>
+                    </td>
+                    <td>Creates a submit button that, by default, will submit the <span class="code">&lt;form&gt;</span> and execute the action.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="code">type="checkbox"</span>
+                    </td>
+                    <td>Using this attribute will render a single checkbox item, to create a group make sure they all use the same <span class="code">name</span> attribute.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="code">type="range"</span>
+                    </td>
+                    <td>Creates a slider that acts as a selector between a minimum and a maximum value, rep. by the <span class="code">min</span> and <span class="code">max</span> attributes. The slider can be adjusted to move in different increments by using the <span class="code">step</span> attribute.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="code">type="radio"</span>
+                    </td>
+                    <td>Creates a single radio button, multiple radio buttons of a related topic are give the same <span class="code">name</span> value. Only a single option can be chosen from a group of radio buttons (i.e. pickup or delivery).</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="code">required</span>
+                    </td>
+                    <td>Specifies that a <span class="code">&lt;input&gt;</span> must include a value.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="code">maxlength</span>/<span class="code">minlength</span>
+                    </td>
+                    <td>For input fields with <span class="code">type="text"</span> that can specify the maximum/minimum number of characters that can be entered.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2><strong>CSS</strong></h2>
+
+    <div class="csssyntax">
+        <h3>Syntax and Selectors</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Class/ID</td>
+                    <td>Classes can be resused, and use <span class="code">.example</span> in CSS. ID are unique and should only be used for one element and use <span class="code">#example</span> in CSS.</td>
+                </tr>
+                <tr>
+                    <td>Type Selectors</td>
+                    <td>Type selectors are the same as HTML tags, but without angle brackets. Example: <span class="code">h1, p, table</span>, etc.</td>
+                </tr>
+                <tr>
+                    <td>Groups of CSS selectors</td>
+                    <td>Using a comma seperated list to group selectors to the same rules. Example: <span class="code">h1</span>, <span class="code">h2</span>.</td>
+                </tr>
+                <tr>
+                    <td> Chaining Selectors</td>
+                    <td>Similar to groups w/o commas, the rule will only apply to elements that match all the criteria. Example: <span class="code">h3.example</span>.</td>
+                </tr>
+                <tr>
+                    <td>Selector Specificity</td>
+                    <td>Specificity is a ranking system for elements to determine which rule will apply. From most specific to least: ID selector, class selector, and type selector.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="visrules">
+        <h3>Visual Rules</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">CSS Declarations</th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">!important</span> Rule
+                    </td>
+                    <td>Used to override anyother selectors regardless of specificity. Good practice to avoid using this rule.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">font-family</span>
+                    </td>
+                    <td>Used to set typeface of text. It must be browser available, incase of it not being available can set up backup typefaces. When using multi-word font names it must be wrapped in quotes.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">font-size</span>
+                    </td>
+                    <td>Used to set text sizes.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">font-weight</span>
+                    </td>
+                    <td>Used to set the boldness of text, uses keywords like <span class="code">normal</span> or <span class="code">bold</span>.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">font-style</span>
+                    </td>
+                    <td>Determines the font style in which text will appear, it accepts <span class="code">italic</span> as a value.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">line-height</span>
+                    </td>
+                    <td>Declares the vertical spacing between lines of text. Accepts both unitless numbers as a ratio (<span class="code">2</span>) and unit numbers (<span class="code">12px</span>), but does not accept negative numbers.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">text-align</span>
+                    </td>
+                    <td>Sets alignment of text using keywords.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">color</span>
+                    </td>
+                    <td>Used to change color of text, can be named colors or use hex/rgb code.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">background-color</span>
+                    </td>
+                    <td>Changes background color of elements.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">background-image</span>
+                    </td>
+                    <td>Sets background image of element, uses a URL as the syntax. Ex: <span class="code">url("example.jpg")</span>.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">opacity</span>
+                    </td>
+                    <td>Controls transparency of an element. 0 being transparent to 1 opaque.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="boxmodel">
+        <h3>The Box Model</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">box-sizing</span>
+                    </td>
+                    <td>Default value is <span class="code">content-box</span>, which renders the actual size of the element including the content box; but not the paddings and borders. <span class="code">border-box</span> renders the actual size of an element including the content box, paddings, and borders.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">overflow</span>
+                    </td>
+                    <td>Determines how the browser will handle content too large for its container. By default, it is set to <span class="code">visible</span>. Can also be set to <span class="code">hidden</span> or <span class="code">scroll</span>.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">visibility</span>
+                    </td>
+                    <td>Used to render <span class="code">hidden</span> objects invisible to the user, without removing them from the page.</td>
+                </tr>
+                <tr>
+                    <td>Margin Collapse</td>
+                    <td>Happens when the top and bottom margins of blocks are combined into a single margin equal to the largest margin. Only happens to vertical margins. <span class="code">auto</span> keyword is used to horizontally center an element in its container.</td>
+                </tr>
+                <tr>
+                    <td>Height and Width Maximums/Minimums</td>
+                    <td><span class="code">min-width</span> and <span class="code">min-height</span> used to set minimums of an element's box. <span class="code">max-width</span> and <span class="code">max-height</span> used to set maximums of an element's box.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="displayposition">
+        <h3>Display and Positioning</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">z-index</span>
+                    </td>
+                    <td>Specifies how far back or how far forward an element will appear on a web page when it overlaps other elements. Uses integer values, can be pos or neg, element with the highest <span class="code">z-index</span> value is at the foreground, while the lowest will be at the back.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">position</span>
+                    </td>
+                    <td>Allows for positioning of HTML elements on a web page. Can be set to <span class="code">static</span>, <span class="code">relative</span>, <span class="code">absolute</span> or <span class="code">fixed</span>. <span class="code">fixed</span> pins the element to a specific spot, regardless of scrolling (navigation bars).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">position: absolute</span>
+                    </td>
+                    <td>Allows an element to ignore sibling elements and be positioned to its closest parent element that is positioned with <span class="code">relative</span> or <span class="code">absolute</span>. By using <span class="code">top</span>, <span class="code">left</span>, <span class="code">bottom</span> and <span class="code">right</span>, the element can be positioned anywhere as expected.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">position: relative</span>
+                    </td>
+                    <td>Positions the element to where it would have originally been on the web page. Req. offset properties to determine the actual position of the element.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">display</span>
+                    </td>
+                    <td>Determines the type of render block for an element. Most common values are <span class="code">block</span>, <span class="code">inline</span>, and <span class="code">inline-block</span>.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">float</span>
+                    </td>
+                    <td>Determines how far left or right an element should float wihtin its parent element. It can be used with the values <span class="code">left</span> and <span class="code">right</span>. Req. that the <span class="code">width</span> of the container must be specified.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">clear</span>
+                    </td>
+                    <td>Used with <span class="code">float</span> to specify how an element should behave with other elements in the same container. Determines on which sides floating elements are allowed to float.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="csscolor">
+        <h3>Colors</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hexadecimal</td>
+                    <td>Can represent sixteen different values using 0-9 and a-f. Composed of 6 characters, each group of two represents a value between 0-255 for red, green, and blue. When both characters of all three are repeated, can be abbrivated to only three values. Example: <span class="code">#0000ff</span> = <span class="code">#00f</span>.</td>
+                </tr>
+                <tr>
+                    <td>RGB</td>
+                    <td>Declared by <span class="code">rgb()</span> syntax. Has three values inside, each representing one of the three main colors, the values range from 0-255.</td>
+                </tr>
+                <tr>
+                    <td>HSL</td>
+                    <td>Declared by <span class="code">hsl()</span> syntax. Contains three values: <em>hue</em> (the color itself), <em>saturation</em> (intensity), and <em>lightness</em>. Hue values range from 0-360, while saturation and lightness are percentages.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>
